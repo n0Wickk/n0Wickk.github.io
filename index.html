@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <container class="header-container">
+            <button class="menu-btn baseWide">
+                MENU
+            </button>
+        </container>
+    </header>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-links-div">
+                <a href="index.html" class="home">
+                    <div class="nav-number">001</div>
+                </a>
+                    <div class="nav-link">HOME</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="characters.html" class="characters">
+                    <div class="nav-number">002</div>
+                </a>
+                <div class="nav-link">CHARACTERS</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="gallery.html" class="gallery">
+                    <div class="nav-number">003</div>
+                </a>
+                <div class="nav-link">GALLERY</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="gallery.html" class="trailer">
+                    <div class="nav-number">004</div>
+                </a>
+                <div class="nav-link">TRAILER</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="login.html" class="login">
+                    <div class="nav-number">005</div>
+                </a>
+                <div class="nav-link">LOGIN</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-img">
+                <img src="assets/hero.jpg" alt="">
+            </div>
+            <div class="hero-content">
+                <div class="hero-content-container baseRegular">
+                    <p class="welcome baseBold">Welcome!</p>
+                    <p class="content-description">This is a fan website with the
+                            purpose to inform about Suzume
+                            characters and story.
+                            Continue exploring
+                            this amazing experience.</p>
+                    <p class="content-description">SPOILER ALERT: THIS WEBSITE
+                            CONTAINS SPOILER</p>
+                </div>
+                <div class="hero-trailer">
+                    <div class="baseBold">
+                        watch trailer
+                    </div>
+                    <div>
+                        <img src="assets/arrow.svg" alt="" class="arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="characters-section">
+        <!-- <div class="characters-container"> -->
+            <hr class="hr">
+            <div class="characters-text baseWide">
+                <div class="content-number">002</div>
+                <div>CHARACTERS</div>
+            </div>
+            <div class="characters-img-wrapper">
+                <img src="assets/002-characters.jpg" alt="" class="characters-img">
+            </div>
+        <!-- </div> -->
+    </section>
+
+    <section class="gallery-section">
+        <!-- <div class="characters-container"> -->
+            <hr class="hr">
+            <div class="gallery-text baseWide">
+                <div class="content-number">003</div>
+                <div>GALLERY</div>
+            </div>
+            <div class="gallery-img-wrapper">
+                <img src="assets/003-gallery.gif" alt="" class="gallery-img">
+            </div>
+        <!-- </div> -->
+    </section>
+
+</body>
+    <script>
+        let menu = document.querySelector(".menu-btn");
+        let nav = document.querySelector(".nav");
+
+        function menuToggle() {
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        }
+
+        menu.addEventListener("click", menuToggle);
+    </script>
+</html>
