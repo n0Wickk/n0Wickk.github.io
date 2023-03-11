@@ -143,9 +143,12 @@ a {
 }
 
 .hero-text-wrapper p {
-    font-size: var(--fs-700);
+    /* font-size: var(--fs-700); */
+    /* font-size: 8vw; */
+    font-size: clamp(1.5rem, 8vw, 5rem);
     margin: 0 auto;
     line-height: 2.25rem;
+    text-align: center;
 }
 
 .hero-img-wrapper img {

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="characters.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-divs">
+                <img src="/assets/suzume-logo.png" alt="">
+            </div>
+            <div class="header-divs">
+                    <img src="/assets/hamburger.svg" alt="" class="menu-btn">
+            </div>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-links-div">
+                <a href="/index.html" class="home">
+                    <div class="nav-number">01</div>
+                </a>
+                    <div class="nav-link">HOME</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="characters.html" class="characters">
+                    <div class="nav-number">02</div>
+                </a>
+                <div class="nav-link">CHARACTERS</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="gallery.html" class="gallery">
+                    <div class="nav-number">03</div>
+                </a>
+                <div class="nav-link">GALLERY</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="gallery.html" class="trailer">
+                    <div class="nav-number">04</div>
+                </a>
+                <div class="nav-link">TRAILER</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="login.html" class="login">
+                    <div class="nav-number">05</div>
+                </a>
+                <div class="nav-link">LOGIN</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main-container">
+            <div class="hero">
+                <div class="hero-title">
+                    <p class="baseWide">CHARACTERS</p>
+                </div>
+                <div class="hero-div2">
+                    <div class="hero-characters-wrapper even-column baseRegular underline">
+                        <p class="hero-characters hero-suzume">Suzume Iwato</p>
+                        <p class="hero-characters hero-souta">Sōta Munakata</p>
+                        <p class="hero-characters hero-daijin">Daijin</p>
+                    </div>
+                    <div class="hero-number-wrapper even-column">
+                        <p class="hero-number baseWide">02</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-img-wrapper">
+                    <img src="/assets/characters-content-img.gif" alt="" class="content-img">
+                </div>
+                <div class="content-text-wrapper">
+                    <p class="baseRegular content-text">
+                        Suzume is the main female protagonist
+                        of Suzume no Tojimari. She is a
+                        17-year-old girl who lives in Kyushu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer baseWide">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <div>
+                    <a href="/index.html">
+                        <p class="underline">BACK</p>
+                    </a>
+                </div>
+                <div>
+                    <p>02/05</p>
+                </div>
+                <div>
+                    <a href="/2.0 Suzume/characterPage/characters.html">
+                        <P class="underline">NEXT</P>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-text-wrapper">
+                <img src="/assets/footer-text.svg" alt="" class="footer-img">
+                <!-- <p class="footer-text">SUZUME</p> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cover">
+        <div>
+            TABLET LAYOUT <br> COMING SOON!
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    let menu = document.querySelector(".menu-btn");
+    let nav = document.querySelector(".nav");
+
+    function menuToggle() {
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+            menu.src = "/assets/hamburger.svg";
+        } else {
+            nav.style.display = "block";
+            menu.src = "/assets/hamburger-close.svg";
+        }
+    }
+
+    menu.addEventListener("click", menuToggle);
+
+    // change content
+    let suzumeBtn = document.querySelector(".hero-suzume");
+    let soutaBtn = document.querySelector(".hero-souta");
+    let daijinBtn = document.querySelector(".hero-daijin");
+
+    let contentImage = document.querySelector(".content-img");
+    let contentText = document.querySelector(".content-text")
+
+    function toSouta() {
+        contentImage.src = "/assets/content-souta.webp";
+        contentText.innerHTML = "Souta is a young man who travels across Japan searching for open doors that bring catastrophe upon its surroundings.";
+    }
+
+    function toDaijin() {
+        contentImage.src = "/assets/hero-daijin.gif";
+        contentText.innerHTML = "Daijin is a cat that can speak human language. It is also nicknamed by locals as AristoCat.";
+    }
+
+    function toSuzume() {
+        contentImage.src = "/assets/characters-content-img.gif";
+        contentText.innerHTML = "Suzume is the main female protagonist of Suzume no Tojimari. She is a 17-year-old girl who lives in Kyushu.";
+    }
+
+    soutaBtn.addEventListener("click", toSouta);
+    daijinBtn.addEventListener("click", toDaijin);
+    suzumeBtn.addEventListener("click", toSuzume);
+
+</script>
