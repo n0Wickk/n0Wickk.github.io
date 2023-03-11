@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="characters.css">
+</head>
+<body>
+    <header>
+        <container class="header-container">
+            <button class="menu-btn baseWide">
+                MENU
+            </button>
+        </container>
+    </header>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-links-div">
+                <a href="index.html" class="home">
+                    <div class="nav-number">001</div>
+                </a>
+                    <div class="nav-link">HOME</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="characters.html" class="characters">
+                    <div class="nav-number">002</div>
+                </a>
+                <div class="nav-link">CHARACTERS</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="gallery.html" class="gallery">
+                    <div class="nav-number">003</div>
+                </a>
+                <div class="nav-link">GALLERY</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="gallery.html" class="trailer">
+                    <div class="nav-number">004</div>
+                </a>
+                <div class="nav-link">TRAILER</div>
+            </div>
+            <div class="nav-links-div">
+                <a href="login.html" class="login">
+                    <div class="nav-number">005</div>
+                </a>
+                <div class="nav-link">LOGIN</div>
+            </div>
+        </div>
+    </nav>
+
+    
+</body>
+</html>
+<script>
+    let menu = document.querySelector(".menu-btn");
+    let nav = document.querySelector(".nav");
+
+    function menuToggle() {
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+        } else {
+            nav.style.display = "block";
+        }
+    }
+
+    menu.addEventListener("click", menuToggle);
+</script>
