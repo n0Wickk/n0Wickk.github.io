@@ -28,22 +28,22 @@
                     <div class="nav-link">HOME</div>
             </div>
             <div class="nav-links-div">
-                <a href="characters.html" class="characters">
+                <a href="/2.0 Suzume/characterPage/characters.html" class="characters">
                     <div class="nav-number">02</div>
                 </a>
                 <div class="nav-link">CHARACTERS</div>
             </div>
             <div class="nav-links-div">
-                <a href="gallery.html" class="gallery">
+                <a href="/2.0 Suzume/trailerPage/trailer.html" class="trailer">
                     <div class="nav-number">03</div>
                 </a>
-                <div class="nav-link">GALLERY</div>
+                <div class="nav-link">TRAILERS</div>
             </div>
             <div class="nav-links-div">
-                <a href="/2.0 Suzume/trailerPage/trailer.html" class="trailer">
+                <a href="/2.0 Suzume/galleryPage/gallery.html" class="gallery">
                     <div class="nav-number">04</div>
                 </a>
-                <div class="nav-link">TRAILER</div>
+                <div class="nav-link">GALLERY</div>
             </div>
             <div class="nav-links-div">
                 <a href="login.html" class="login">
@@ -62,9 +62,9 @@
                 </div>
                 <div class="hero-div2">
                     <div class="hero-characters-wrapper even-column baseRegular underline">
-                        <p class="hero-characters hero-suzume">OFFICIAL TRAILER 01</p>
-                        <p class="hero-characters hero-souta">OFFICIAL TRAILER 02</p>
-                        <p class="hero-characters hero-daijin">OFFICIAL TRAILER 03</p>
+                        <p class="hero-characters trailer1Btn">OFFICIAL TRAILER 01</p>
+                        <p class="hero-characters trailer2Btn">OFFICIAL TRAILER 02</p>
+                        <p class="hero-characters trailer3Btn">OFFICIAL TRAILER 03</p>
                     </div>
                     <div class="hero-number-wrapper even-column">
                         <p class="hero-number baseWide">03</p>
@@ -85,7 +85,7 @@
         <div class="footer-container">
             <div class="footer-nav">
                 <div>
-                    <a href="/index.html">
+                    <a href="/2.0 Suzume/characterPage/characters.html">
                         <p class="underline">BACK</p>
                     </a>
                 </div>
@@ -93,7 +93,7 @@
                     <p>02/05</p>
                 </div>
                 <div>
-                    <a href="/2.0 Suzume/trailerPage/trailer.html">
+                    <a href="/2.0 Suzume/galleryPage/gallery.html">
                         <P class="underline">NEXT</P>
                     </a>
                 </div>
@@ -130,4 +130,27 @@
     }
 
     menu.addEventListener("click", menuToggle);
+
+    // change content
+    let trailer1Btn = document.querySelector(".trailer1Btn");
+    let trailer2Btn = document.querySelector(".trailer2Btn");
+    let trailer3Btn = document.querySelector(".trailer3Btn");
+    let trailer01 = "https://www.youtube.com/embed/Dbpfum5vKIw?modestbranding=1";
+    let trailer02 = "https://www.youtube.com/embed/6R6q2fAp2n4?modestbranding=1";
+    let trailer03 = "https://www.youtube.com/embed/Va93_hokOkk?modestbranding=1";
+    let iframe = document.querySelector(".content-img");
+
+    function toTrailer1() {
+        iframe.src = trailer01;
+    }
+    function toTrailer2() {
+        iframe.src = trailer02;
+    }
+    function toTrailer3() {
+        iframe.src = trailer03;
+    }
+
+    trailer1Btn.addEventListener("click", toTrailer1);
+    trailer2Btn.addEventListener("click", toTrailer2);
+    trailer3Btn.addEventListener("click", toTrailer3);
 </script>
