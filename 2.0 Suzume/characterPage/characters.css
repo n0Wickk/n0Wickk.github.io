@@ -186,7 +186,9 @@ nav {
 
 /* hero */
 .hero-title {
-    font-size: var(--fs-800);
+    /* font-size: var(--fs-800); */
+    /* font-size: clamp(1rem, var(--fs-800), 5rem); */
+    font-size: 2.5rem;
 }
 
 .hero-div2 {
