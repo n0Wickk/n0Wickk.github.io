@@ -223,6 +223,15 @@ nav {
     0% { opacity: 0; }
     100% { opacity: 1; }
   } */
+.content-img-wrapper {
+    /* height: 147px; */
+}
+
+.content-img {
+    height: 180px;
+    min-width: 100%;
+    object-fit: cover;
+}
 
 .content {
     opacity: 100;
