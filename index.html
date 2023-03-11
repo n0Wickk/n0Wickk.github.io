@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suzume</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <container class="header-container">
-            <button class="menu-btn baseWide">
-                MENU
-            </button>
-        </container>
-    </header>
+    
+    <div class="header">
+        <div class="header-container">
+            <div class="header-divs">
+                <img src="/assets/suzume-logo.png" alt="">
+            </div>
+            <div class="header-divs">
+                    <img src="/assets/hamburger.svg" alt="" class="menu-btn">
+            </div>
+        </div>
+    </div>
 
     <nav class="nav">
         <div class="nav-container">
@@ -51,71 +55,85 @@
         </div>
     </nav>
 
-    <div class="hero-section">
-        <div class="hero-container">
-            <div class="img-wrapper">
-                <img src="assets/home.webp" alt="">
-            </div>
-            <div class="even-column">
-                <div class="hero-content">
-                    <div>
-                        <p class="baseBold welcome">
-                            Welcome!
-                        </p>
-                    </div>
-                    <div>
-                        <p class="baseRegular hero-description">
-                            This is a fan website with the 
-                            purpose to inform about Suzume
-                             characters and story.
-                             Continue exploring this 
-                             amazing experience.
-                        </p>
-                    </div>
-                    <div>
-                        <p class="baseRegular hero-description">
-                            SPOILER ALERT: THIS WEBSITE
-                             CONTAINS SPOILER CONTENTS
-                        </p>
-                    </div>
+    <div class="main">
+        <div class="main-container">
+            <div class="hero">
+                <div class="hero-text-wrapper baseWide">
+                    <p>Makoto Shinkai's new film 'Suzume'</p>
                 </div>
-                <div class="flex-end">
-                    <hr class="hr">
-                    <a href="characters.html">
-                        <div class="even-right">
-                            <div>
-                                <div class="content-number">
-                                    <p class="baseWide btm-space">002</p>
-                                </div>
-                                <div class="content-text">
-                                    <div>
-                                        <p class="baseBold">CHARACTERS</p>
-                                    </div>
-                                    <div>
-                                        <img src="assets/arrow.svg" alt="" class="arrow">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                <div class="hero-img-wrapper">
+                    <img src="/assets/hero-img.webp" alt="">
+                </div>
+            </div>
+            <div class="content baseLight">
+                <div class="content-div1">
+                    <p>It depicts a high school girl and a mysterious
+                         young man trying to prevent a series of 
+                         disasters <br> across Japan.
+                    </p>
+                </div>
+                <div class="content-div2">
+                    <div class="content-left">
+                        <p>Suzume had an advance IMAX screening in 
+                            Japan on November 7, 2022, and was
+                             released nationwide on November 11. 
+                             The film has grossed $104.9 million 
+                             worldwide, becoming the 
+                             fourth-highest-grossing film of 2022 in 
+                             Japan.</p>
+                    </div>
+                    <div class="content-right">
+                        <img src="/assets/hero-img2.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="footer baseWide">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <div>
+                    <a href="index.html">
+                        <p class="underline">BACK</p>
+                    </a>
+                </div>
+                <div>
+                    <p>01/05</p>
+                </div>
+                <div>
+                    <a href="characters.html">
+                        <P class="underline">NEXT</P>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-text-wrapper">
+                <img src="/assets/footer-text.svg" alt="" class="footer-img">
+                <!-- <p class="footer-text">SUZUME</p> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="cover">
+        <div>
+            TABLET LAYOUT <br> COMING SOON!
+        </div>
+    </div>
 </body>
-    <script>
-        let menu = document.querySelector(".menu-btn");
-        let nav = document.querySelector(".nav");
-
-        function menuToggle() {
-            if (nav.style.display === "block") {
-                nav.style.display = "none";
-            } else {
-                nav.style.display = "block";
-            }
-        }
-
-        menu.addEventListener("click", menuToggle);
-    </script>
 </html>
+<script>
+    let menu = document.querySelector(".menu-btn");
+    let nav = document.querySelector(".nav");
+
+    function menuToggle() {
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+            menu.src = "/assets/hamburger.svg";
+        } else {
+            nav.style.display = "block";
+            menu.src = "/assets/hamburger-close.svg";
+        }
+    }
+
+    menu.addEventListener("click", menuToggle);
+</script>
