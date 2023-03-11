@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Characters</title>
-    <link rel="stylesheet" href="characters.css">
+    <title>Trailer</title>
+    <link rel="stylesheet" href="trailer.css">
 </head>
 <body>
     <div class="header">
@@ -58,29 +58,24 @@
         <div class="main-container">
             <div class="hero">
                 <div class="hero-title">
-                    <p class="baseWide">CHARACTERS</p>
+                    <p class="baseWide">TRAILERS</p>
                 </div>
                 <div class="hero-div2">
                     <div class="hero-characters-wrapper even-column baseRegular underline">
-                        <p class="hero-characters hero-suzume">Suzume Iwato</p>
-                        <p class="hero-characters hero-souta">Sōta Munakata</p>
-                        <p class="hero-characters hero-daijin">Daijin</p>
+                        <p class="hero-characters hero-suzume">OFFICIAL TRAILER 01</p>
+                        <p class="hero-characters hero-souta">OFFICIAL TRAILER 02</p>
+                        <p class="hero-characters hero-daijin">OFFICIAL TRAILER 03</p>
                     </div>
                     <div class="hero-number-wrapper even-column">
-                        <p class="hero-number baseWide">02</p>
+                        <p class="hero-number baseWide">03</p>
                     </div>
                 </div>
             </div>
             <div class="content">
                 <div class="content-img-wrapper">
-                    <img src="/assets/characters-content-img.gif" alt="" class="content-img">
-                </div>
-                <div class="content-text-wrapper">
-                    <p class="baseRegular content-text">
-                        Suzume is the main female protagonist
-                        of Suzume no Tojimari. She is a
-                        17-year-old girl who lives in Kyushu.
-                    </p>
+                    <iframe class="content-img"
+                        src="https://www.youtube.com/embed/Dbpfum5vKIw?modestbranding=1">
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -116,9 +111,9 @@
             TABLET LAYOUT <br> COMING SOON!
         </div>
     </div>
+
 </body>
 </html>
-
 <script>
     // hamburger
     let menu = document.querySelector(".menu-btn");
@@ -135,32 +130,4 @@
     }
 
     menu.addEventListener("click", menuToggle);
-
-    // change content
-    let suzumeBtn = document.querySelector(".hero-suzume");
-    let soutaBtn = document.querySelector(".hero-souta");
-    let daijinBtn = document.querySelector(".hero-daijin");
-
-    let contentImage = document.querySelector(".content-img");
-    let contentText = document.querySelector(".content-text")
-
-    function toSouta() {
-        contentImage.src = "/assets/content-souta.webp";
-        contentText.innerHTML = "Souta is a young man who travels across Japan searching for open doors that bring catastrophe upon its surroundings.";
-    }
-
-    function toDaijin() {
-        contentImage.src = "/assets/hero-daijin.gif";
-        contentText.innerHTML = "Daijin is a cat that can speak human language. It is also nicknamed by locals as AristoCat. Daijin is a keystone in the movie";
-    }
-
-    function toSuzume() {
-        contentImage.src = "/assets/characters-content-img.gif";
-        contentText.innerHTML = "Suzume is the main female protagonist of Suzume no Tojimari. She is a 17-year-old girl who lives in Kyushu.";
-    }
-
-    soutaBtn.addEventListener("click", toSouta);
-    daijinBtn.addEventListener("click", toDaijin);
-    suzumeBtn.addEventListener("click", toSuzume);
-
 </script>
