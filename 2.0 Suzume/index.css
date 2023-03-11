@@ -190,6 +190,10 @@ a {
 }
 
 /* footer */
+.footer {
+    margin-bottom: 1rem;
+}
+
 .footer-container {
     max-width: 90%;
     margin: 0 auto;
@@ -204,10 +208,6 @@ a {
 .footer-img {
     min-width: 100%;
     margin-top: .5rem;
-}
-
-.cover {
-    display: none;
 }
 
 /* nav */
@@ -250,6 +250,9 @@ nav {
     }
 
 
+.cover {
+    display: none;
+}
 /* TABLET */
 /* not enough time */
 /* cover */
