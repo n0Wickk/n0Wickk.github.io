@@ -215,6 +215,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+    /* text-transform: uppercase; */
 }
 
 /* content */
