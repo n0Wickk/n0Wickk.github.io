@@ -318,7 +318,7 @@ nav {
         place-items: center;
         position: absolute;
         top: 0;
-        height: 100vh;
+        height: 200vh;
         width: 100vw;
         z-index: 9999;
         background-color: white;
